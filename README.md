@@ -5,7 +5,7 @@ TypeScript を使用
 
 状態管理は context api を使用
 
-url はこちら https://hamabehayato.github.io/nextjs-output-only-front/
+url はこちら https://nextjs-output-only-front-nine.vercel.app/
 
 目次
 環境構築
