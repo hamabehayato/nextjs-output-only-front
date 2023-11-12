@@ -29,10 +29,10 @@ export const TodoList: FC<Props> = ({ showTodoList, deleteTodo }) => {
         <div className={styles.todo} key={todo.id}>
           <p>{todo.title}</p>
           <div className={styles.iconBox}>
-            <Link href={`${NAVIGATION_PATH.DETAIL}/${todo.id}`} className={styles.icon}>
+            <Link href={`${NAVIGATION_PATH.DETAIL}${todo.id}`} className={styles.icon}>
               <DetailIcon />
             </Link>
-            <Link href={`${NAVIGATION_PATH.EDIT}/${todo.id}`} className={styles.icon}>
+            <Link href={`${NAVIGATION_PATH.EDIT}${todo.id}`} className={styles.icon}>
               <EditIcon />
             </Link>
             <button onClick={() => deleteTodo(todo.id)} className={styles.icon}>
