@@ -3,9 +3,10 @@
  *
  * @package components
  */
-import { useTodoContext } from '../../../contexts/TodoContext'
+import { useTodoContext } from '@/contexts/TodoContext'
 import { useTodoListTemplate } from './useTodoListTemplate'
 import { BaseLayout } from '@/components/organisms/BaseLayout'
+import { InputForm } from '@/components/atoms/InputForm'
 
 export const TodoListTemplate = () => {
   const { originTodoList, deleteTodo } = useTodoContext()
@@ -20,8 +21,15 @@ export const TodoListTemplate = () => {
    */
   return (
     <BaseLayout title={'TodoList'}>
-      {/* TODO ここに要素追加していく */}
-      <div></div>
+      <section>
+        <InputForm
+          value={inputSearch}
+          placeholder={'Search Key Word'}
+          onChange={handleChangeSearch}
+        />
+      </section>
+
+      {/* {showTodoList.length > 0 && <TodoList showTodoList={showTodoList} deleteTodo={deleteTodo} />} */}
     </BaseLayout>
   )
 }

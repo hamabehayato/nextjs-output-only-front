@@ -23,10 +23,10 @@ export const BaseLayout = ({ children, title }: Props) => {
       <section>
         <Navigation />
       </section>
-      {children}
-      <div className={styles.titleBox}>
+      <section className={styles.titleBox}>
         <h1>{title}</h1>
-      </div>
+      </section>
+      {children}
     </div>
   )
 }
