@@ -4,8 +4,8 @@
  * @package hooks
  */
 import { useState, useMemo, useCallback } from 'react'
-import { TodoType } from '../../../interfaces/Todo'
-import { EventType } from '../../../interfaces/Event'
+import { TodoType } from '@/interfaces/Todo'
+import { EventType } from '@/interfaces/Event'
 
 type Params = {
   originTodoList: Array<TodoType>
@@ -28,7 +28,6 @@ type ActionsType = {
  * handleChangeContent: (function(*): void)
  * handleChangeTitle: (function(*): void)}]}
  */
-
 export const useTodoListTemplate = ({ originTodoList }: Params) => {
   /* local state */
   const [inputSearch, setInputSearch] = useState('')

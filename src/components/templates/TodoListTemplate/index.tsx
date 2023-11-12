@@ -6,6 +6,7 @@
 import { useTodoContext } from '@/contexts/TodoContext'
 import { useTodoListTemplate } from './useTodoListTemplate'
 import { BaseLayout } from '@/components/organisms/BaseLayout'
+import { TodoList } from '@/components/organisms/TodoList'
 import { InputForm } from '@/components/atoms/InputForm'
 
 export const TodoListTemplate = () => {
@@ -21,15 +22,13 @@ export const TodoListTemplate = () => {
    */
   return (
     <BaseLayout title={'TodoList'}>
-      <section>
-        <InputForm
-          value={inputSearch}
-          placeholder={'Search Key Word'}
-          onChange={handleChangeSearch}
-        />
-      </section>
+      <InputForm
+        value={inputSearch}
+        placeholder={'Search Key Word'}
+        onChange={handleChangeSearch}
+      />
 
-      {/* {showTodoList.length > 0 && <TodoList showTodoList={showTodoList} deleteTodo={deleteTodo} />} */}
+      {showTodoList.length > 0 && <TodoList showTodoList={showTodoList} deleteTodo={deleteTodo} />}
     </BaseLayout>
   )
 }

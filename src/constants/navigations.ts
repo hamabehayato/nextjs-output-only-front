@@ -12,28 +12,25 @@ type NavigationsType = {
 }
 
 /**
- * router URL
- */
-export const ROUTE_PATH: string = '/nextjs-output-only-front'
-
-/**
- * router 定義に使用
+ * リンク先一覧
+ * 遷移先定義の際に使用
  * @type {{TOP: string, CREATE: string, DETAIL: string, EDIT: string}}
  */
 export const NAVIGATION_LIST: NavigationsType = {
-  TOP: `${ROUTE_PATH}/`,
-  CREATE: `${ROUTE_PATH}/create`,
-  DETAIL: `${ROUTE_PATH}/detail/:id`,
-  EDIT: `${ROUTE_PATH}/edit/:id`,
+  TOP: `/`,
+  CREATE: `/create`,
+  DETAIL: `/detail/:id`,
+  EDIT: `/edit/:id`,
 }
 
 /**
- * 遷移先定義に使用
+ * パス一覧
+ * 画面遷移時に使用
  * @type {{TOP: string, CREATE: string, DETAIL: string, EDIT: string}}
  */
 export const NAVIGATION_PATH: NavigationsType = {
-  TOP: `${ROUTE_PATH}/`,
-  CREATE: `${ROUTE_PATH}/create`,
-  DETAIL: `${ROUTE_PATH}/detail/`,
-  EDIT: `${ROUTE_PATH}/edit/`,
+  TOP: `/`,
+  CREATE: `/create`,
+  DETAIL: `/detail/`,
+  EDIT: `/edit/`,
 }
