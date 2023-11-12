@@ -18,9 +18,9 @@ type NavigationsType = {
  */
 export const NAVIGATION_LIST: NavigationsType = {
   TOP: `/`,
-  CREATE: `/create`,
-  DETAIL: `/detail/:id`,
-  EDIT: `/edit/:id`,
+  CREATE: `/todo/create`,
+  DETAIL: `/todo/detail/:id`,
+  EDIT: `/todo/edit/:id`,
 }
 
 /**
@@ -30,7 +30,7 @@ export const NAVIGATION_LIST: NavigationsType = {
  */
 export const NAVIGATION_PATH: NavigationsType = {
   TOP: `/`,
-  CREATE: `/create`,
-  DETAIL: `/detail/`,
-  EDIT: `/edit/`,
+  CREATE: `/todo/create/`,
+  DETAIL: `/todo/detail/`,
+  EDIT: `/todo/edit/`,
 }
