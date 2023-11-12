@@ -8,8 +8,8 @@
 // https://zenn.dev/tsucchiiinoko/articles/8da862593a9980
 import { useState, useCallback } from 'react'
 import { useRouter } from 'next/router'
-import { INIT_TODO_LIST } from '../constants/data'
-import { NAVIGATION_LIST } from '../constants/navigations'
+import { INIT_TODO_LIST } from '@/constants/data'
+import { NAVIGATION_LIST } from '@/constants/navigations'
 
 /**
  * useTodo

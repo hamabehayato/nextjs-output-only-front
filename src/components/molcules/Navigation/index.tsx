@@ -14,9 +14,11 @@ import styles from './styles.module.css'
  */
 export const Navigation = () => {
   return (
-    <ul className={styles.list}>
-      <NavigationLink label={'Top'} linkPath={NAVIGATION_LIST.TOP} />
-      <NavigationLink label={'Create'} linkPath={NAVIGATION_LIST.CREATE} />
-    </ul>
+    <nav>
+      <ul className={styles.list}>
+        <NavigationLink label={'Top'} linkPath={NAVIGATION_LIST.TOP} />
+        <NavigationLink label={'Create'} linkPath={NAVIGATION_LIST.CREATE} />
+      </ul>
+    </nav>
   )
 }

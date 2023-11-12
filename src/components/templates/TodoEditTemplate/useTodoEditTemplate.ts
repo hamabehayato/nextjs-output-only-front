@@ -5,9 +5,9 @@
  */
 import { useState, useMemo, useCallback } from 'react'
 import { useRouter } from 'next/router'
-import { NAVIGATION_PATH } from '../../../constants/navigations'
-import { TodoType } from '../../../interfaces/Todo'
-import { EventType } from '../../../interfaces/Event'
+import { NAVIGATION_PATH } from '@/constants/navigations'
+import { TodoType } from '@/interfaces/Todo'
+import { EventType } from '@/interfaces/Event'
 
 type Params = {
   // id, title, content を持つオブジェクトが引数で、返り値が void の関数である

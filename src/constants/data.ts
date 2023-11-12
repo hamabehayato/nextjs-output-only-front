@@ -3,7 +3,7 @@
  *
  * @package constants
  */
-import { TodoType } from '../interfaces/Todo';
+import { TodoType } from '@/interfaces/Todo'
 
 /**
  * Todoリストの初期値
@@ -19,4 +19,4 @@ export const INIT_TODO_LIST: Array<TodoType> = [
     title: 'test2',
     content: 'test2 content',
   },
-];
+]

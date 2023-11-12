@@ -1,6 +1,6 @@
 import React from 'react'
 import { AppProps } from 'next/app'
-import { TodoProvider } from '../contexts/TodoContext'
+import { TodoProvider } from '@/contexts/TodoContext'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }: AppProps) {

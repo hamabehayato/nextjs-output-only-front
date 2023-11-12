@@ -4,8 +4,7 @@
  * @package hooks
  */
 import { useState, useCallback } from 'react'
-import { NAVIGATION_PATH } from '../../../constants/navigations'
-import { EventType } from '../../../interfaces/Event'
+import { EventType } from '@/interfaces/Event'
 
 type Params = {
   addTodo: (title: string, content: string) => void
