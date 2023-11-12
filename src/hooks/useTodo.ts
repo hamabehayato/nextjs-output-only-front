@@ -55,7 +55,7 @@ export const useTodo = () => {
         return todo
       })
       setOriginTodoList(newTodos)
-      useRouter()
+      router.push(NAVIGATION_LIST.TOP)
     },
     [originTodoList]
   )
